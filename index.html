@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hacking Progress</title>
+	<style>
+		body {
+			background-color: black;
+			color: green;
+			font-family: 'Courier New', Courier, monospace;
+			font-size: 1.2em;
+			text-align: center;
+		}
+		h1 {
+			font-size: 2em;
+			margin-top: 50px;
+			text-transform: uppercase;
+		}
+		#hack-status {
+			font-size: 3em;
+			margin-top: 50px;
+			text-transform: uppercase;
+			display: none;
+		}
+		#loader {
+			font-size: 1.5em;
+			margin-top: 50px;
+			animation: blink 1s infinite;
+		}
+		@keyframes blink {
+			0% { opacity: 0; }
+			50% { opacity: 1; }
+			100% { opacity: 0; }
+		}
+		#hack-code {
+			font-size: 1.2em;
+			margin-top: 50px;
+			animation: typing 5s steps(30) forwards;
+			white-space: nowrap;
+			overflow: hidden;
+			border-right: 3px solid green;
+		}
+		#hack-code1 {
+			font-size: 1.2em;
+			margin-top: 50px;
+			animation: typing 5s steps(30) forwards;
+			white-space: nowrap;
+			overflow: hidden;
+			border-right: 3px solid green;
+		}
+		#hack-code2 {
+			font-size: 1.2em;
+			margin-top: 50px;
+			animation: typing 5s steps(30) forwards;
+			white-space: nowrap;
+			overflow: hidden;
+			border-right: 3px solid green;
+		}
+		#hack-code3 {
+			font-size: 1.2em;
+			margin-top: 50px;
+			animation: typing 5s steps(30) forwards;
+			white-space: nowrap;
+			overflow: hidden;
+			border-right: 3px solid green;
+		}
+		@keyframes typing {
+			0% { width: 0; }
+			100% { width: 100%; }
+		}
+	</style>
+</head>
+<body>
+	<h1>Hacking Progress</h1>
+	<div id="hack-code">// Initializing hack sequence...............................................................................................................................................</div>
+	<div id="hack-code1">// Establishing connection.................................................................................................................................................</div>
+	<div id="hack-code2">// Bypassing security......................................................................................................................................................</div>
+	<div id="hack-code3">//Stealing data............................................................................................................................................................</div>
+	<div id="hack-status">Hacking in progress...</div>
+	<div id="loader">Loading...</div>
+	<script>
+		// Simulate a fake hack with some random delay
+		setTimeout(function() {
+			document.getElementById("hack-code").style.display = "none";
+			document.getElementById("hack-code1").style.display = "none";
+			document.getElementById("hack-code2").style.display = "none";
+			document.getElementById("hack-code3").style.display = "none";
+			document.getElementById("hack-status").style.display = "block";
+			document.getElementById("hack-status").textContent = "Hacking successful!";
+			document.getElementById("loader").style.display = "none";
+		}, 7000);
+	</script>
+</body>
+</html>

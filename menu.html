@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Console</title>
+    <style>
+        body {
+			background-color: black;
+			color: green;
+			font-family: 'Courier New', Courier, monospace;
+			font-size: 1.2em;
+			text-align: center;
+		}
+        textarea{
+            background-color: black;
+            color: green;
+            font-family: 'Courier New', Courier, monospace;
+			font-size: 1.2em;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Launch Config</h1>
+    <label for="textfeld">Enter script - then type "run":</label><br>
+    <textarea id="textfeld" name="textfeld" rows="4" cols="50"></textarea>
+    <script>
+        const textarea = document.querySelector('textarea');
+        textarea.addEventListener('input', () => {
+            if (textarea.value.includes('run')) {
+                console.log('start');
+                setTimeout(function(){
+                    window.location.href = "index.html";
+                }, 2000)
+            }
+        });
+    </script>
+</body>
+</html>
