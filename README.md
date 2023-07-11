@@ -1,4 +1,4 @@
 # Fake-Hacking-Screen
-It’s a Fake Hacking Screen using HTML, CSS and JavaScript. It has an menu. On there you can type in the textfield „run“ to execute the fake Hacking Screen.
+A fake Hacking Screen using HTML, CSS and JavaScript. It has a console, where you can type in „run“ at the end of the textfield to execute the fake Hacking Screen. 
 
 In cooperation with @JamesGamesGitHub
